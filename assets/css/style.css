@@ -103,3 +103,28 @@ body {
 
 
 
+@media (min-width: 300px) {
+    :root {
+        --board-size: 280px;
+    }
+}
+@media (min-width: 400px) {
+    :root {
+        --board-size: 360px;
+    }
+}
+@media (min-width: 600px) {
+    :root {
+        --board-size: 400px;
+    }
+}
+@media (min-width: 720px) {
+    :root {
+        --board-size: 540px;
+    }
+}
+@media (min-width: 1024px) {
+    :root {
+        --board-size: 620px;
+    }
+}
