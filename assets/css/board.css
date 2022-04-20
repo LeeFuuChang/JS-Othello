@@ -66,13 +66,13 @@
     height: calc( var(--block-size) * 2 );
 }
 .board-option-type:nth-child(2) .board-option-type-content > div:nth-child(1) {
-    margin-left: calc( var(--block-size) / 2 );
+    margin-right: calc( var(--block-size) / 2 );
 }
 .board-option-type:nth-child(2) .board-option-type-content > div:nth-child(2) {
     margin: 0 calc( var(--block-size) / 2 );
 }
 .board-option-type:nth-child(2) .board-option-type-content > div:nth-child(3) {
-    margin-right: calc( var(--block-size) / 2 );
+    margin-left: calc( var(--block-size) / 2 );
 }
 
 

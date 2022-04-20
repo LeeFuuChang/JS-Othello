@@ -685,11 +685,8 @@ window.onload = function(){
     }
 
     $("#board-options").show();
+    $(".board-option-type").hide();
     $("#board-options > #menu").show();
-    $("#board-options > #menu-mode").hide();
-    $("#board-options > #menu-mode-pvp").hide();
-    $("#board-options > #menu-mode-pve").hide();
-    $("#board-options > #menu-mode-online").hide();
 
 
     $("#startbtn").on("click", function(){
@@ -697,6 +694,7 @@ window.onload = function(){
         $("#board-options > #menu-mode").show();
     });
     $("#helpbtn").on("click", function(){
+        alert("黑白棋遊戲說明\n【簡介】\n黑白棋又叫反棋(Reversi)、奧賽羅棋(Othello)、蘋果棋或翻轉棋。遊戲通過相互翻轉對方的棋子，最後以棋盤上誰的棋子多來判斷勝負。\n【規則】\n1．黑方先行，雙方交替下棋。\n2．新落下的棋子與棋盤上已有的同色棋子間，對方被夾住的所有棋子都要翻轉過來。可以是橫著夾，豎著夾，或是斜著夾。夾住的位置上必須全部是對手的棋子，不能有空格。\n3．新落下的棋子必須翻轉對手一個或多個棋子，否則就不能落子。\n4．如果一方沒有合法棋步，也就是說不管他下到哪裡，都不能至少翻轉對手的一個棋子，那他這一輪只能棄權，而由他的對手繼續落子直到他有合法棋步可下。\n5．如果一方至少有一步合法棋步可下，他就必須落子，不得棄權。\n6．當棋盤填滿或者雙方都無合法棋步可下時，遊戲結束。結束時誰的棋子最多誰就是贏家。")
     });
     $("#pvpbtn").on("click", function(){
         $("#board-options").hide();
