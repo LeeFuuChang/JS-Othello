@@ -1,0 +1,130 @@
+@import url("board.css");
+@import url("tile.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --board-size: 600px;
+    --board-border: calc( var(--board-size)/60 );
+    --block-size: calc( var(--board-size)/8 );
+    --tile-size: calc( var(--block-size)*0.75 );
+}
+
+
+.hide {
+    display: none !important;
+}
+.dfr {
+    display: flex;
+    flex-direction: row;
+}
+.dfc {
+    display: flex;
+    flex-direction: column;
+}
+.aic {
+    align-items: center;
+}
+.jcc {
+    justify-content: center;
+}
+
+
+body {
+    height: 100%;
+    padding-top: 36px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: #727272;
+    overflow: hidden;
+}
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+#content #content-title {
+    width: var(--board-size);
+    justify-content: space-between;
+}
+
+
+#content #content-title .title-counter {
+    margin: 0 16px;
+    width: calc( var(--tile-size)*1.25 );
+    height: calc( var(--tile-size)*1.25 );
+    border-radius: 50%;
+    font-size: calc( var(--board-size)/16 );
+    box-shadow: calc(var(--board-size)*0.0117) calc(var(--board-size)*0.0117) calc(var(--board-size)*0.0167) rgba(0, 0, 0, 0.25),
+    inset calc(var(--board-size)*0.0083) calc(var(--board-size)*0.0083) calc(var(--board-size)*0.0117) rgba(255, 255, 255, 0.25),
+    inset calc(var(--board-size)*-0.0083) calc(var(--board-size)*-0.0083) calc(var(--board-size)*0.0117) rgba(0, 0, 0, 0.5);
+}
+#content #content-title .title-counter:first-child {
+    background: #333;
+}
+#content #content-title .title-counter:last-child {
+    background: #fff;
+}
+#content #content-title .title-counter:first-child .title-counter-data {
+    color: #fff;
+}
+#content #content-title .title-counter:last-child .title-counter-data {
+    color: #333;
+}
+
+
+#content #content-title #title {
+    font-size: calc( var(--board-size)/8 );
+    text-shadow: 0 2px 3px #000;
+}
+#content #content-title #title span {
+    margin: 4px 8px;
+}
+#content #content-title #title span:nth-child(odd) {
+    color: #333;
+}
+#content #content-title #title span:nth-child(even) {
+    color: #fff;
+}
+
+
+
+
+
+@media (min-width: 300px) {
+    :root {
+        --board-size: 280px;
+    }
+}
+@media (min-width: 400px) {
+    :root {
+        --board-size: 360px;
+    }
+}
+@media (min-width: 600px) {
+    :root {
+        --board-size: 400px;
+    }
+}
+@media (min-width: 720px) {
+    :root {
+        --board-size: 540px;
+    }
+}
+@media (min-width: 1024px) {
+    :root {
+        --board-size: 620px;
+    }
+}
