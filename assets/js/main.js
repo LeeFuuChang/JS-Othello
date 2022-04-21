@@ -526,7 +526,7 @@ class Board{
         let r = countTiles(this.m);
         this.blackTiles = r[0];
         this.whiteTiles = r[1];
-        return this.whiteTiles + this.blackTiles;
+        return (this.whiteTiles*WHITE) + (this.blackTiles*BLACK);
     };
 }
 
